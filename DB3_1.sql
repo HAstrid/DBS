@@ -1,12 +1,12 @@
-INSERT INTO Physician VALUES(1,'John Dorian','Staff Internist',111111111);
-INSERT INTO Physician VALUES(2,'Elliot Reid','Attending Physician',222222222);
-INSERT INTO Physician VALUES(3,'Christopher Turk','Surgical Attending Physician',333333333);
-INSERT INTO Physician VALUES(4,'Percival Cox','Senior Attending Physician',444444444);
-INSERT INTO Physician VALUES(5,'Bob Kelso','Head Chief of Medicine',555555555);
-INSERT INTO Physician VALUES(6,'Todd Quinlan','Surgical Attending Physician',666666666);
-INSERT INTO Physician VALUES(7,'John Wen','Surgical Attending Physician',777777777);
-INSERT INTO Physician VALUES(8,'Keith Dudemeister','MD Resident',888888888);
-INSERT INTO Physician VALUES(9,'Molly Clock','Attending Psychiatrist',999999999);
+INSERT INTO Physician VALUES(1,'John Dorian',111111111,'Staff Internist');
+INSERT INTO Physician VALUES(2,'Elliot Reid',222222222,'Attending Physician');
+INSERT INTO Physician VALUES(3,'Christopher Turk',333333333,'Surgical Attending Physician');
+INSERT INTO Physician VALUES(4,'Percival Cox',444444444,'Senior Physician');
+INSERT INTO Physician VALUES(5,'Bob Kelso',555555555,'Head of Medicine');
+INSERT INTO Physician VALUES(6,'Todd Quinlan',666666666,'Surgical Attending Physician');
+INSERT INTO Physician VALUES(7,'John Wen',777777777,'Surgical Physician');
+INSERT INTO Physician VALUES(8,'Keith Eister',888888888,'MD Resident');
+INSERT INTO Physician VALUES(9,'Molly Clock',999999999,'Attend Psychiatrist');
 
 INSERT INTO Department VALUES(1,'General Medicine',4);
 INSERT INTO Department VALUES(2,'Surgery',7);
@@ -24,13 +24,13 @@ INSERT INTO Affiliated_With VALUES(7,2,1);
 INSERT INTO Affiliated_With VALUES(8,1,1);
 INSERT INTO Affiliated_With VALUES(9,3,1);
 
-INSERT INTO Procedure VALUES(1,'Reverse Rhinopodoplasty',1500.0);
-INSERT INTO Procedure VALUES(2,'Obtuse Pyloric Recombobulation',3750.0);
-INSERT INTO Procedure VALUES(3,'Folded Demiophtalmectomy',4500.0);
-INSERT INTO Procedure VALUES(4,'Complete Walletectomy',10000.0);
-INSERT INTO Procedure VALUES(5,'Obfuscated Dermogastrotomy',4899.0);
-INSERT INTO Procedure VALUES(6,'Reversible Pancreomyoplasty',5600.0);
-INSERT INTO Procedure VALUES(7,'Follicular Demiectomy',25.0);
+INSERT INTO Procedures VALUES(1,'Reverse Rhinopodoplasty',1500.0);
+INSERT INTO Procedures VALUES(2,'Obtuse Pyloric Recombobulation',3750.0);
+INSERT INTO Procedures VALUES(3,'Folded Demiophtalmectomy',4500.0);
+INSERT INTO Procedures VALUES(4,'Complete Walletectomy',10000.0);
+INSERT INTO Procedures VALUES(5,'Obfuscated Dermogastrotomy',4899.0);
+INSERT INTO Procedures VALUES(6,'Reversible Pancreomyoplasty',5600.0);
+INSERT INTO Procedures VALUES(7,'Follicular Demiectomy',25.0);
 
 INSERT INTO Patient VALUES(100000001,'John Smith','42 Foobar Lane','555-0256',68476213,1);
 INSERT INTO Patient VALUES(100000002,'Grace Ritchie','37 Snafu Drive','555-0512',36546321,2);
