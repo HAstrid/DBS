@@ -14,11 +14,11 @@ INSERT INTO Department VALUES(3,'Psychiatry',9);
 
 INSERT INTO Affiliated_With VALUES(1,1,1);
 INSERT INTO Affiliated_With VALUES(2,1,1);
-INSERT INTO Affiliated_With VALUES(3,1,0);
-INSERT INTO Affiliated_With VALUES(3,2,1);
+INSERT INTO Affiliated_With VALUES(3,1,0);/*no*/
+INSERT INTO Affiliated_With VALUES(3,2,1);/* no*/
 INSERT INTO Affiliated_With VALUES(4,1,1);
 INSERT INTO Affiliated_With VALUES(5,1,1);
-INSERT INTO Affiliated_With VALUES(6,2,1);
+INSERT INTO Affiliated_With VALUES(6,2,1);/*no*/
 INSERT INTO Affiliated_With VALUES(7,1,0);
 INSERT INTO Affiliated_With VALUES(7,2,1);
 INSERT INTO Affiliated_With VALUES(8,1,1);
@@ -32,14 +32,14 @@ INSERT INTO Procedures VALUES(5,'Obfuscated Dermogastrotomy',4899.0);
 INSERT INTO Procedures VALUES(6,'Reversible Pancreomyoplasty',5600.0);
 INSERT INTO Procedures VALUES(7,'Follicular Demiectomy',25.0);
 
-INSERT INTO Patient VALUES(100000001,'John Smith','42 Foobar Lane','555-0256',68476213,1);
-INSERT INTO Patient VALUES(100000002,'Grace Ritchie','37 Snafu Drive','555-0512',36546321,2);
-INSERT INTO Patient VALUES(100000003,'Random J. Patient','101 Omgbbq Street','555-1204',65465421,2);
-INSERT INTO Patient VALUES(100000004,'Dennis Doe','1100 Foobaz Avenue','555-2048',68421879,3);
+INSERT INTO Patient VALUES(1001,'John Smith',68476213,1);
+INSERT INTO Patient VALUES(1002,'Grace Ritchie',36546321,2);
+INSERT INTO Patient VALUES(1003,'Random J',65465421,2);
+INSERT INTO Patient VALUES(1004,'Dennis Doe',68421879,3);
 
-INSERT INTO Nurse VALUES(101,'Carla Espinosa','Head Nurse',1,111111110);
-INSERT INTO Nurse VALUES(102,'Laverne Roberts','Nurse',1,222222220);
-INSERT INTO Nurse VALUES(103,'Paul Flowers','Nurse',0,333333330);
+INSERT INTO Nurse VALUES(101,'Carla Espinosa','Head Nurse',1);
+INSERT INTO Nurse VALUES(102,'Laverne Roberts','Nurse',1);
+INSERT INTO Nurse VALUES(103,'Paul Flowers','Nurse',0);
 
 INSERT INTO Appointment VALUES(13216584,100000001,101,1,'2008-04-24 10:00','2008-04-24 11:00','A');
 INSERT INTO Appointment VALUES(26548913,100000002,101,2,'2008-04-24 10:00','2008-04-24 11:00','B');
@@ -51,28 +51,28 @@ INSERT INTO Appointment VALUES(76983231,100000001,NULL,3,'2008-04-26 12:00','200
 INSERT INTO Appointment VALUES(86213939,100000004,102,9,'2008-04-27 10:00','2008-04-21 11:00','A');
 INSERT INTO Appointment VALUES(93216548,100000002,101,2,'2008-04-27 10:00','2008-04-27 11:00','B');
 
-INSERT INTO Medication VALUES(1,'Procrastin-X','X','N/A');
-INSERT INTO Medication VALUES(2,'Thesisin','Foo Labs','N/A');
-INSERT INTO Medication VALUES(3,'Awakin','Bar Laboratories','N/A');
-INSERT INTO Medication VALUES(4,'Crescavitin','Baz Industries','N/A');
-INSERT INTO Medication VALUES(5,'Melioraurin','Snafu Pharmaceuticals','N/A');
+INSERT INTO Medication VALUES(1,'Procrastin-X','X','N/A',20);
+INSERT INTO Medication VALUES(2,'Thesisin','Foo Labs','N/A',25);
+INSERT INTO Medication VALUES(3,'Awakin','Bar Laboratories','N/A',30);
+INSERT INTO Medication VALUES(4,'Crescavitin','Baz Industries','N/A',10);
+INSERT INTO Medication VALUES(5,'Melioraurin','Snafu Pharm','N/A',15);
 
 INSERT INTO Prescribes VALUES(1,100000001,1,'2008-04-24 10:47',13216584,'5');
 INSERT INTO Prescribes VALUES(9,100000004,2,'2008-04-27 10:53',86213939,'10');
 INSERT INTO Prescribes VALUES(9,100000004,2,'2008-04-30 16:53',NULL,'5');
 
-INSERT INTO Block VALUES(1,1);
-INSERT INTO Block VALUES(1,2);
-INSERT INTO Block VALUES(1,3);
-INSERT INTO Block VALUES(2,1);
-INSERT INTO Block VALUES(2,2);
-INSERT INTO Block VALUES(2,3);
-INSERT INTO Block VALUES(3,1);
-INSERT INTO Block VALUES(3,2);
-INSERT INTO Block VALUES(3,3);
-INSERT INTO Block VALUES(4,1);
-INSERT INTO Block VALUES(4,2);
-INSERT INTO Block VALUES(4,3);
+INSERT INTO Block VALUES(1,'A');
+INSERT INTO Block VALUES(1,'B');
+INSERT INTO Block VALUES(1,'C');
+INSERT INTO Block VALUES(2,'A');
+INSERT INTO Block VALUES(2,'B');
+INSERT INTO Block VALUES(2,'C');
+INSERT INTO Block VALUES(3,'A');
+INSERT INTO Block VALUES(3,'B');
+INSERT INTO Block VALUES(3,'C');
+INSERT INTO Block VALUES(4,'A');
+INSERT INTO Block VALUES(4,'B');
+INSERT INTO Block VALUES(4,'C');
 
 INSERT INTO Room VALUES(101,'Single',1,1,0);
 INSERT INTO Room VALUES(102,'Single',1,1,0);
