@@ -13,5 +13,18 @@ select name,title from Reviewer r,Movies m,Review s where r.rid=s.rid and m.mid=
 
 select distinct(yor),rate from Movies m,Review r where r.mid=m.mid and rate>3 order by yor;
 
-select fname from Actor a join Act c on a.aid=c.aid join Movies m on m.mid=c.mid and a.aid= (select aid  from Act a,Movie m where 
-a.mid=m.mid and yor <1998) and a.aid =any(select aid from Act a, Movie m wehere a.mid=m.mid and yor>2000);
+select fname from Actor a join Act c on a.aid=c.aid join Movies m on m.mid=c.mid and a.aid= (select aid  from Act a,Movies m where 
+a.mid=m.mid and yor <1990) and a.aid =any(select aid from Act a, Movies m where a.mid=m.mid and yor>2000);
+
+select a.fname,m.title,m.yor from Act at join Actor a on a.aid=at.aid join Movies m on at.mid=m.mid
+  where yor not between 1990 and 2000;
+  
+  select * from Movies;
+  select * from Actor;
+  select * from Act;
+  
+  select fname from Actor a join Act c on a.aid=c.aid join Movies m on m.mid=c.mid and a.aid=(select aid from Act a,Movies m where 
+  a.mid=m.mid and yor<1990) and a.aid=any(select aid from Act a,Movies m where a.mid=m.mid and yor>2000);
+  
+  select type,count(m.mid),avg(duration) from Movies m join BelongsTo b on m.mid=b.mid join Genre g on g.gid=b.gid group by g.gid;
+  
